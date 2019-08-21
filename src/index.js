@@ -1,4 +1,4 @@
-// import React for implememnting component
+// import React for implementing component
 import React from 'react';
 // import ReactDOM for ...
 import ReactDOM from 'react-dom';
