@@ -1,12 +1,32 @@
+// import React for implememnting component
 import React from 'react';
+// import ReactDOM for ...
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import external components below
+// import DemoComponent from './demo-compo';
+// import ParentComponent from './multiple-compo';
+// import JsComponent from './js-expresion';
+// import StatePropsParent from './state-props';
+import EventPropParent from './event-props';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class IndexComponent extends React.Component {
+  render() { 
+    return ( 
+      <div>
+        {/* <h1>Index</h1>
+        <DemoComponent />
+        <ParentComponent />
+        <JsComponent /> */}
+        {/* <StatePropsParent /> */}
+        <EventPropParent />
+      </div>
+    )
+  }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// DOM render method have two arguments, 1st what, 2nd where ... to be render.
+// component name must be placed as TAG <___/>
+ReactDOM.render(<IndexComponent />, document.getElementById('root'))
+
+
+
